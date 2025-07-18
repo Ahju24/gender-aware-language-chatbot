@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chat with StyleBot</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f7f9fc;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: #26c6da;
+      color: white;
+      width: 100%;
+      padding: 20px 30px;
+      text-align: left;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+
+    main {
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .return-link {
+      margin-top: 20px;
+      text-align: left;
+      padding-left: 10px;
+    }
+
+    .return-link a {
+      text-decoration: none;
+      color: #26c6da;
+      font-weight: bold;
+      border: 1px solid #26c6da;
+      padding: 10px 16px;
+      border-radius: 6px;
+      background-color: #e0f7fa;
+      transition: 0.3s;
+    }
+
+    .return-link a:hover {
+      background-color: #b2ebf2;
+    }
+
+    df-messenger {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Chat with StyleBot</h1>
+  </header>
+  
+  
+    <div style="display: flex; align-items: center; margin-top: 8px;">
+      <span style="font-size: 18px; margin-left: 4px; margin-right: 8px;"> ℹ️</span>
+      <p style="margin: 0; font-size: 15px; color: #000000;">
+        For the best experience, please respond using the provided options (e.g., event type, weather, clothing preferences).
+      </p>
+    </div>
+  
+    <div style="margin-top: 6px; display: flex; align-items: center;">
+      <span style="font-size: 18px; margin-left: 4px; margin-right: 8px;">🕒</span>
+      <p style="margin: 0; font-size: 15px; color: #000000;">
+        The chatbot might take a few extra seconds to respond if it's been idle. If you don't get a reply, just send your message again - thanks for your patience!
+      </p>
+    </div>
+
+  <main>
+    <!-- Dialogflow Messenger Embed -->
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <!-- Replace agent-id with your own agent-id -->
+    <df-messenger
+        intent="WELCOME"
+        chat-title="StyleBot"
+        agent-id="ecd452e6-f5d0-4a79-a88b-aaeb5b6ef1ad"
+        language-code="en"
+    ></df-messenger>
+  </main>
+
+  <script>
+    // Capture the pid from the URL and store it
+    const urlParams = new URLSearchParams(window.location.search);
+    const pid = urlParams.get('pid');
+    if (pid) {
+      sessionStorage.setItem('pid', pid);
+    }
+
+    // Flag to prevent duplicate return links
+    let returnLinkShown = false;
+    
+    // Wait for the Dialogflow Messenger to be ready
+    window.addEventListener('df-messenger-loaded', function () {
+      const messenger = document.querySelector('df-messenger');
+
+      // Listen for messages from Dialogflow
+      messenger.addEventListener('df-response-received', function (event) {
+        const responses = event.detail.response.queryResult.fulfillmentMessages;
+
+        responses.forEach((response) => {
+          if (response.payload && response.payload.type === 'return_link' && !returnLinkShown) {
+            returnLinkShown = true; // Set the flag to prevent future links
+            const storedPid = sessionStorage.getItem('pid') || 'missingPID';
+            const returnURL = `https://www.soscisurvey.de/seminar19/?r=return&pid=${storedPid}`;
+
+            const messageDiv = document.createElement('div');
+            messageDiv.className = 'return-link';
+            messageDiv.innerHTML = `
+              <a href="${returnURL}">Click here to return to the survey</a>
+            `;
+
+            document.querySelector('main').appendChild(messageDiv);
+          }
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>
+
