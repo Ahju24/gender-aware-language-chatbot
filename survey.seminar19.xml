@@ -1,0 +1,820 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE surveyProject SYSTEM "doctype.survey.dtd">
+<surveyProject version="2.4" timestamp="2025-07-12 12:00:00" program="oFb" progversion="3.7.06 1389">
+<title>University seminar</title>
+<description />
+<attributes.specific program="ofb">
+<attr id="language">eng</attr>
+</attributes.specific>
+<section>
+<title>Pre-survey</title>
+<attributes.specific program="ofb">
+<attr id="id">PR</attr>
+<attr id="pos">1</attr>
+</attributes.specific>
+<question>
+<description>Redirection to specific chatbot link</description>
+<class>TextContent</class>
+<title />
+<explanation />
+<inputPosition>right</inputPosition>
+<lead>
+<![CDATA[Please click
+<a href="https://ahju24.github.io/chatbot/" target="_blank">
+here</a>
+to begin the study.
+<br>
+<br>
+After completing the communication, please return using the button provided.
+<br>
+You may then close this window.]]>
+</lead>
+<order>default</order>
+<attributes.specific program="ofb">
+<attr id="id">4</attr>
+<attr id="pos">1</attr>
+<attr id="alignment">default</attr>
+<attr id="character">html</attr>
+</attributes.specific>
+</question>
+<question>
+<description>Redirection to neutral chatbot link</description>
+<class>TextContent</class>
+<title />
+<explanation />
+<inputPosition>right</inputPosition>
+<lead>
+<![CDATA[Please click
+<a href="https://ahju24.github.io/chatbot-b/" target="_blank">
+here</a>
+to begin the study.
+<br>
+<br>
+After completing the communication, please return using the button provided.
+<br>
+You may then close this window.]]>
+</lead>
+<order>default</order>
+<attributes.specific program="ofb">
+<attr id="id">5</attr>
+<attr id="pos">2</attr>
+<attr id="alignment">default</attr>
+<attr id="character">html</attr>
+</attributes.specific>
+</question>
+<question>
+<description>Intro specific</description>
+<class>select</class>
+<title />
+<explanation>
+<![CDATA[Welcome to this study on **gender-aware language in chatbot interactions**.
+
+We’re conducting research on how the use of gender-specific versus gender-neutral language in chatbot communication influences user engagement.
+
+**Procedure**
+
+In this study, you’ll briefly talk to the chatbot "StyleBot" that provides outfit suggestions based on a few details you provide.
+Your task is simple: you'll choose a scenario, and StyleBot will suggest clothing options based on the context and your preferences.
+After the chatbot conversation, you’ll be asked to complete a brief follow-up survey about your engagement.
+
+**Duration**
+
+The entire process should only take about **5 minutes**.
+
+**Anonymity & Voluntary participation**
+
+Your responses are completely **anonymous** and will be used only for academic purposes as part of a university seminar project. The study does not collect any personally identifying data. Participation is **voluntary**, and you may stop at any time.
+
+--
+
+If you have any questions or concerns, please feel free to contact us at:
+
+//ahju.jang@stud.tu-darmstadt.de//
+
+
+
+We really appreciate your participation!]]>
+</explanation>
+<inputPosition>right</inputPosition>
+<order>default</order>
+<attributes.specific program="ofb">
+<attr id="id">6</attr>
+<attr id="pos">3</attr>
+<attr id="restrictions.answered">yes</attr>
+</attributes.specific>
+<filter>
+<condition type="any">
+<value id="vOpt">2</value>
+</condition>
+<effect type="so">
+<value id="qIS">PR07</value>
+</effect>
+</filter>
+<item>
+<text>I am at least 18 years old and consent to participate.</text>
+<attributes.specific program="ofb">
+<attr id="id">1</attr>
+<attr id="pos">1</attr>
+</attributes.specific>
+</item>
+<item>
+<text>I do not wish to participate.</text>
+<attributes.specific program="ofb">
+<attr id="id">2</attr>
+<attr id="pos">2</attr>
+</attributes.specific>
+</item>
+</question>
+<question>
+<description>No participation </description>
+<class>TextContent</class>
+<title />
+<explanation />
+<inputPosition>right</inputPosition>
+<lead>Thank you for your time. You may now close this window.</lead>
+<order>default</order>
+<attributes.specific program="ofb">
+<attr id="id">7</attr>
+<attr id="pos">4</attr>
+<attr id="alignment">default</attr>
+<attr id="character">plain</attr>
+</attributes.specific>
+</question>
+<question>
+<description>Intro neutral</description>
+<class>select</class>
+<title />
+<explanation>
+<![CDATA[Welcome to this study on **gender-aware language in chatbot interactions**.
+
+We’re conducting research on how the use of gender-specific versus gender-neutral language in chatbot communication influences user engagement.
+
+**Procedure**
+
+In this study, you’ll briefly talk to the chatbot "StyleBot" that provides outfit suggestions based on a few details you provide.
+Your task is simple: you'll choose a scenario, and StyleBot will suggest clothing options based on the context and your preferences.
+After the chatbot conversation, you’ll be asked to complete a brief follow-up survey about your engagement.
+
+**Duration**
+
+The entire process should only take about **5 minutes**.
+
+**Anonymity & Voluntary participation**
+
+Your responses are completely **anonymous** and will be used only for academic purposes as part of a university seminar project. The study does not collect any personally identifying data. Participation is **voluntary**, and you may stop at any time.
+
+--
+
+If you have any questions or concerns, please feel free to contact us at:
+
+//ahju.jang@stud.tu-darmstadt.de//
+
+
+
+We really appreciate your participation!]]>
+</explanation>
+<inputPosition>right</inputPosition>
+<order>default</order>
+<attributes.specific program="ofb">
+<attr id="id">8</attr>
+<attr id="pos">5</attr>
+<attr id="restrictions.answered">yes</attr>
+</attributes.specific>
+<filter>
+<condition type="any">
+<value id="vOpt">2</value>
+</condition>
+<effect type="so">
+<value id="qIS">PR07</value>
+</effect>
+</filter>
+<item>
+<text>I am at least 18 years old and consent to participate.</text>
+<attributes.specific program="ofb">
+<attr id="id">1</attr>
+<attr id="pos">1</attr>
+</attributes.specific>
+</item>
+<item>
+<text>I do not wish to participate.</text>
+<attributes.specific program="ofb">
+<attr id="id">2</attr>
+<attr id="pos">2</attr>
+</attributes.specific>
+</item>
+</question>
+<question>
+<description>pid</description>
+<class>internal</class>
+<title />
+<explanation />
+<inputPosition>right</inputPosition>
+<order>default</order>
+<attributes.specific program="ofb">
+<attr id="id">9</attr>
+<attr id="pos">6</attr>
+</attributes.specific>
+<item>
+<text>pid</text>
+<attributes.specific program="ofb">
+<attr id="id">1</attr>
+<attr id="pos">1</attr>
+</attributes.specific>
+</item>
+</question>
+</section>
+<section>
+<title>Post-survey</title>
+<attributes.specific program="ofb">
+<attr id="id">PO</attr>
+<attr id="pos">2</attr>
+</attributes.specific>
+<question>
+<description>FA-PU</description>
+<class>scale</class>
+<title>Post-survey</title>
+<explanation>Please indicate how much you agree or disagree with the following statements about your chatbot experience.</explanation>
+<inputPosition>right</inputPosition>
+<labels>
+<li i="1">strongly disagree</li>
+<li i="2">disagree</li>
+<li i="3">neutral</li>
+<li i="4">agree</li>
+<li i="5">strongly agree</li>
+</labels>
+<order>default</order>
+<residualOptions>
+<li i="0"><![CDATA[don't<br>know]]></li>
+</residualOptions>
+<attributes.specific program="ofb">
+<attr id="id">1</attr>
+<attr id="pos">1</attr>
+<attr id="scale.display">complete</attr>
+<attr id="displayNumbering">asc</attr>
+<attr id="restrictions.answered">yes</attr>
+<attr id="metrics.width_texted">120</attr>
+</attributes.specific>
+<item>
+<text>I lost myself in this chatbot-experience.</text>
+<attributes.specific program="ofb">
+<attr id="id">1</attr>
+<attr id="pos">1</attr>
+</attributes.specific>
+</item>
+<item>
+<text>The time I spent using StyleBot just slipped away.</text>
+<attributes.specific program="ofb">
+<attr id="id">2</attr>
+<attr id="pos">2</attr>
+</attributes.specific>
+</item>
+<item>
+<text>I was absorbed in this chatbot-experience.</text>
+<attributes.specific program="ofb">
+<attr id="id">3</attr>
+<attr id="pos">3</attr>
+</attributes.specific>
+</item>
+<item>
+<text>I felt frustrated while using StyleBot.</text>
+<attributes.specific program="ofb">
+<attr id="id">4</attr>
+<attr id="pos">4</attr>
+</attributes.specific>
+</item>
+<item>
+<text>I found StyleBot confusing to use.</text>
+<attributes.specific program="ofb">
+<attr id="id">5</attr>
+<attr id="pos">5</attr>
+</attributes.specific>
+</item>
+<item>
+<text>Using StyleBot was taxing.</text>
+<attributes.specific program="ofb">
+<attr id="id">6</attr>
+<attr id="pos">6</attr>
+</attributes.specific>
+</item>
+</question>
+<question>
+<description>AE-RW</description>
+<class>scale</class>
+<title />
+<explanation>Please indicate how much you agree or disagree with the following statements about your chatbot experience.</explanation>
+<inputPosition>right</inputPosition>
+<labels>
+<li i="1">strongly disagree</li>
+<li i="2">disagree</li>
+<li i="3">neutral</li>
+<li i="4">agree</li>
+<li i="5">strongly agree</li>
+</labels>
+<order>default</order>
+<residualOptions>
+<li i="0"><![CDATA[don't<br>know]]></li>
+</residualOptions>
+<attributes.specific program="ofb">
+<attr id="id">2</attr>
+<attr id="pos">2</attr>
+<attr id="scale.display">complete</attr>
+<attr id="restrictions.answered">yes</attr>
+<attr id="metrics.width_texted">120</attr>
+<attr id="wedge.height">30</attr>
+</attributes.specific>
+<item>
+<text>StyleBot was attractive.</text>
+<attributes.specific program="ofb">
+<attr id="id">1</attr>
+<attr id="pos">1</attr>
+</attributes.specific>
+</item>
+<item>
+<text>StyleBot was aesthetically appealing.</text>
+<attributes.specific program="ofb">
+<attr id="id">2</attr>
+<attr id="pos">2</attr>
+</attributes.specific>
+</item>
+<item>
+<text>StyleBot appealed to my senses.</text>
+<attributes.specific program="ofb">
+<attr id="id">3</attr>
+<attr id="pos">3</attr>
+</attributes.specific>
+</item>
+<item>
+<text>Using StyleBot was worthwhile.</text>
+<attributes.specific program="ofb">
+<attr id="id">4</attr>
+<attr id="pos">4</attr>
+</attributes.specific>
+</item>
+<item>
+<text>My experience was rewarding.</text>
+<attributes.specific program="ofb">
+<attr id="id">5</attr>
+<attr id="pos">5</attr>
+</attributes.specific>
+</item>
+<item>
+<text>I felt interested in this experience.</text>
+<attributes.specific program="ofb">
+<attr id="id">6</attr>
+<attr id="pos">6</attr>
+</attributes.specific>
+</item>
+</question>
+<question>
+<description>Free text</description>
+<class>suggest</class>
+<title>Additional suggestions</title>
+<explanation>
+<![CDATA[Is there anything else you would like to share about your experience with StyleBot? 
+Feel free to share anything you found helpful, confusing, surprising, or unclear.]]>
+</explanation>
+<inputPosition>right</inputPosition>
+<order>default</order>
+<residualOptions>
+<li i="0">Prefer not to answer</li>
+</residualOptions>
+<attributes.specific program="ofb">
+<attr id="id">3</attr>
+<attr id="pos">3</attr>
+<attr id="number">no</attr>
+<attr id="restrictions.answered">yes</attr>
+<attr id="settings">
+<li i="0">0</li>
+<li i="1">0</li>
+</attr>
+</attributes.specific>
+<item>
+<text />
+<attributes.specific program="ofb">
+<attr id="id">1</attr>
+<attr id="pos">1</attr>
+</attributes.specific>
+</item>
+</question>
+<question>
+<description>Demographic questions</description>
+<class>TextContent</class>
+<title />
+<explanation />
+<headerText>Demographic questions</headerText>
+<inputPosition>right</inputPosition>
+<lead>
+<![CDATA[Before we finish, we’d like to ask a few brief demographic questions.
+Your answers will help us better understand our participants and interpret the study results. All responses are anonymous and optional.]]>
+</lead>
+<order>default</order>
+<attributes.specific program="ofb">
+<attr id="id">7</attr>
+<attr id="pos">4</attr>
+<attr id="alignment">default</attr>
+<attr id="character">plain</attr>
+</attributes.specific>
+</question>
+<question>
+<description>Age</description>
+<class>select</class>
+<title>Age</title>
+<explanation>Please select your age group.</explanation>
+<inputPosition>right</inputPosition>
+<order>default</order>
+<residualOptions>
+<li i="0">Prefer not to say</li>
+</residualOptions>
+<attributes.specific program="ofb">
+<attr id="id">4</attr>
+<attr id="pos">5</attr>
+</attributes.specific>
+<item>
+<text>18-24</text>
+<attributes.specific program="ofb">
+<attr id="id">1</attr>
+<attr id="pos">1</attr>
+</attributes.specific>
+</item>
+<item>
+<text>25-34</text>
+<attributes.specific program="ofb">
+<attr id="id">2</attr>
+<attr id="pos">2</attr>
+</attributes.specific>
+</item>
+<item>
+<text>35-44</text>
+<attributes.specific program="ofb">
+<attr id="id">3</attr>
+<attr id="pos">3</attr>
+</attributes.specific>
+</item>
+<item>
+<text>45+</text>
+<attributes.specific program="ofb">
+<attr id="id">4</attr>
+<attr id="pos">4</attr>
+</attributes.specific>
+</item>
+</question>
+<question>
+<description>Gender</description>
+<class>select</class>
+<title>Gender</title>
+<explanation>Please select your gender.</explanation>
+<inputPosition>right</inputPosition>
+<order>default</order>
+<residualOptions>
+<li i="0">Prefer not to say</li>
+</residualOptions>
+<attributes.specific program="ofb">
+<attr id="id">5</attr>
+<attr id="pos">6</attr>
+</attributes.specific>
+<item>
+<text>Male</text>
+<attributes.specific program="ofb">
+<attr id="id">1</attr>
+<attr id="pos">1</attr>
+</attributes.specific>
+</item>
+<item>
+<text>Female</text>
+<attributes.specific program="ofb">
+<attr id="id">2</attr>
+<attr id="pos">2</attr>
+</attributes.specific>
+</item>
+<item>
+<text>Other</text>
+<attributes.specific program="ofb">
+<attr id="id">3</attr>
+<attr id="pos">3</attr>
+</attributes.specific>
+</item>
+</question>
+<question>
+<description>Current occupation</description>
+<class>select</class>
+<title>Current occupation</title>
+<explanation>Please select your current occupation or status.</explanation>
+<inputPosition>right</inputPosition>
+<order>default</order>
+<residualOptions>
+<li i="0">Prefer not to say</li>
+</residualOptions>
+<attributes.specific program="ofb">
+<attr id="id">6</attr>
+<attr id="pos">7</attr>
+</attributes.specific>
+<item>
+<text>Student / Trainee</text>
+<attributes.specific program="ofb">
+<attr id="id">1</attr>
+<attr id="pos">1</attr>
+</attributes.specific>
+</item>
+<item>
+<text>Employed full- or part-time</text>
+<attributes.specific program="ofb">
+<attr id="id">2</attr>
+<attr id="pos">2</attr>
+</attributes.specific>
+</item>
+<item>
+<text>Unemployed</text>
+<attributes.specific program="ofb">
+<attr id="id">4</attr>
+<attr id="pos">3</attr>
+</attributes.specific>
+</item>
+<item>
+<text>Other</text>
+<attributes.specific program="ofb">
+<attr id="id">5</attr>
+<attr id="pos">4</attr>
+</attributes.specific>
+</item>
+</question>
+</section>
+<section>
+<title>Random selector</title>
+<attributes.specific program="ofb">
+<attr id="id">RS</attr>
+<attr id="pos">3</attr>
+</attributes.specific>
+<question>
+<description>Random selector</description>
+<class>random</class>
+<title />
+<explanation />
+<inputPosition>right</inputPosition>
+<order>default</order>
+<attributes.specific program="ofb">
+<attr id="id">1</attr>
+<attr id="pos">1</attr>
+<attr id="data">
+<![CDATA[1 gs
+2 n]]>
+</attr>
+</attributes.specific>
+</question>
+<question>
+<description>pid</description>
+<class>TextContent</class>
+<title />
+<explanation />
+<inputPosition>right</inputPosition>
+<order>default</order>
+<attributes.specific program="ofb">
+<attr id="id">2</attr>
+<attr id="pos">2</attr>
+<attr id="alignment">default</attr>
+<attr id="character">plain</attr>
+</attributes.specific>
+</question>
+</section>
+<layoutTexts>
+<layoutText id="default.imprint"><txt lng="eng"><![CDATA[<a href="mailto:ahju.jang@gmail.com">Anju Jang</a>, 
+Technical University of Darmstadt – 2025]]></txt></layoutText>
+</layoutTexts>
+<questionnaire>
+<title>Gender-specific</title>
+<attributes.specific program="ofb">
+<attr id="id">gs</attr>
+<attr id="content">&lt;?xml version=&quot;1.0&quot;?&gt;
+&lt;questionnaire&gt;
+
+&lt;!-- Page 1 --&gt;
+&lt;page intID=&quot;12&quot;&gt;
+&lt;php intID=&quot;13&quot;&gt;&lt;![CDATA[
+if (readGET(&quot;r&quot;) == &quot;return&quot;) {
+    goToPage(&quot;FAPU&quot;);
+}
+]]&gt;&lt;/php&gt;
+&lt;/page&gt;
+
+
+&lt;!-- Page 2 --&gt;
+&lt;page ident=&quot;chatbot&quot; intID=&quot;3&quot;&gt;
+&lt;question id=&quot;PR06&quot; intID=&quot;1&quot; /&gt;
+&lt;/page&gt;
+
+
+&lt;!-- Page 3 --&gt;
+&lt;page intID=&quot;9&quot;&gt;
+&lt;question id=&quot;PR04&quot; intID=&quot;10&quot; /&gt;
+&lt;php intID=&quot;11&quot;&gt;
+
+&lt;/php&gt;
+&lt;html intID=&quot;22&quot;&gt;&lt;![CDATA[
+&lt;script type=&quot;text/javascript&quot;&gt;
+&lt;!--
+ 
+
+ 
+// Hide next button (optional)
+SoSciTools.submitButtonsHide();
+ 
+// --&gt;
+&lt;/script&gt;
+]]&gt;&lt;/html&gt;
+&lt;/page&gt;
+
+
+&lt;!-- Page 4 --&gt;
+&lt;page ident=&quot;FAPU&quot; intID=&quot;2&quot;&gt;
+&lt;question id=&quot;PO01&quot; intID=&quot;4&quot; /&gt;
+&lt;/page&gt;
+
+
+&lt;!-- Page 5 --&gt;
+&lt;page intID=&quot;5&quot;&gt;
+&lt;question id=&quot;PO02&quot; intID=&quot;6&quot; /&gt;
+&lt;/page&gt;
+
+
+&lt;!-- Page 6 --&gt;
+&lt;page intID=&quot;7&quot;&gt;
+&lt;question id=&quot;PO03&quot; intID=&quot;8&quot; /&gt;
+&lt;/page&gt;
+
+
+&lt;!-- Page 7 --&gt;
+&lt;page intID=&quot;14&quot;&gt;
+&lt;question id=&quot;PO07&quot; intID=&quot;15&quot; /&gt;
+&lt;/page&gt;
+
+
+&lt;!-- Page 8 --&gt;
+&lt;page intID=&quot;16&quot;&gt;
+&lt;question id=&quot;PO04&quot; intID=&quot;17&quot; /&gt;
+&lt;/page&gt;
+
+
+&lt;!-- Page 9 --&gt;
+&lt;page intID=&quot;18&quot;&gt;
+&lt;question id=&quot;PO05&quot; intID=&quot;19&quot; /&gt;
+&lt;/page&gt;
+
+
+&lt;!-- Page 10 --&gt;
+&lt;page intID=&quot;20&quot;&gt;
+&lt;question id=&quot;PO06&quot; intID=&quot;21&quot; /&gt;
+&lt;/page&gt;
+
+
+&lt;/questionnaire&gt;</attr>
+<attr id="goodbye">
+<![CDATA[=== Thank you for participating in this study! ===
+
+Your responses are anonymous and will be used only for academic purposes as part of a university seminar project.
+
+If you have any questions, concerns, or would like to withdraw your data, please feel free to contact us at:
+
+//ahju.jang@stud.tu-darmstadt.de//
+
+Thank you again for your time and participation!
+
+--
+
+Your answers were submitted, you may close the browser window or tab now.]]>
+</attr>
+<attr id="selection">0</attr>
+</attributes.specific>
+</questionnaire>
+<questionnaire>
+<title>Neutral</title>
+<attributes.specific program="ofb">
+<attr id="id">n</attr>
+<attr id="content">&lt;?xml version=&quot;1.0&quot;?&gt;
+&lt;questionnaire&gt;
+
+&lt;!-- Page 1 --&gt;
+&lt;page intID=&quot;3&quot;&gt;
+&lt;php intID=&quot;4&quot;&gt;&lt;![CDATA[
+if (readGET(&quot;r&quot;) == &quot;return&quot;) {
+    goToPage(&quot;FAPUn&quot;);
+}
+]]&gt;&lt;/php&gt;
+&lt;/page&gt;
+
+
+&lt;!-- Page 2 --&gt;
+&lt;page ident=&quot;chatbot&quot; intID=&quot;1&quot;&gt;
+&lt;question id=&quot;PR08&quot; intID=&quot;2&quot; /&gt;
+&lt;/page&gt;
+
+
+&lt;!-- Page 3 --&gt;
+&lt;page intID=&quot;5&quot;&gt;
+&lt;question id=&quot;PR05&quot; intID=&quot;6&quot; /&gt;
+&lt;html intID=&quot;21&quot;&gt;&lt;![CDATA[
+&lt;script type=&quot;text/javascript&quot;&gt;
+&lt;!--
+ 
+
+ 
+// Hide next button (optional)
+SoSciTools.submitButtonsHide();
+ 
+// --&gt;
+&lt;/script&gt;
+]]&gt;&lt;/html&gt;
+&lt;/page&gt;
+
+
+&lt;!-- Page 4 --&gt;
+&lt;page ident=&quot;FAPUn&quot; intID=&quot;7&quot;&gt;
+&lt;question id=&quot;PO01&quot; intID=&quot;8&quot; /&gt;
+&lt;/page&gt;
+
+
+&lt;!-- Page 5 --&gt;
+&lt;page intID=&quot;9&quot;&gt;
+&lt;question id=&quot;PO02&quot; intID=&quot;10&quot; /&gt;
+&lt;/page&gt;
+
+
+&lt;!-- Page 6 --&gt;
+&lt;page intID=&quot;11&quot;&gt;
+&lt;question id=&quot;PO03&quot; intID=&quot;12&quot; /&gt;
+&lt;/page&gt;
+
+
+&lt;!-- Page 7 --&gt;
+&lt;page intID=&quot;13&quot;&gt;
+&lt;question id=&quot;PO07&quot; intID=&quot;14&quot; /&gt;
+&lt;/page&gt;
+
+
+&lt;!-- Page 8 --&gt;
+&lt;page intID=&quot;15&quot;&gt;
+&lt;question id=&quot;PO04&quot; intID=&quot;16&quot; /&gt;
+&lt;/page&gt;
+
+
+&lt;!-- Page 9 --&gt;
+&lt;page intID=&quot;17&quot;&gt;
+&lt;question id=&quot;PO05&quot; intID=&quot;18&quot; /&gt;
+&lt;/page&gt;
+
+
+&lt;!-- Page 10 --&gt;
+&lt;page intID=&quot;19&quot;&gt;
+&lt;question id=&quot;PO06&quot; intID=&quot;20&quot; /&gt;
+&lt;/page&gt;
+
+
+&lt;/questionnaire&gt;</attr>
+<attr id="goodbye">
+<![CDATA[=== Thank you for participating in this study! ===
+
+Your responses are anonymous and will be used only for academic purposes as part of a university seminar project.
+
+If you have any questions, concerns, or would like to withdraw your data, please feel free to contact us at:
+
+//ahju.jang@stud.tu-darmstadt.de//
+
+Thank you again for your time and participation!
+
+--
+
+Your answers were submitted, you may close the browser window or tab now.
+]]>
+</attr>
+<attr id="selection">0</attr>
+</attributes.specific>
+</questionnaire>
+<questionnaire>
+<title>Random selection</title>
+<attributes.specific program="ofb">
+<attr id="id">random</attr>
+<attr id="content">&lt;?xml version=&quot;1.0&quot;?&gt;
+&lt;questionnaire&gt;
+
+&lt;!-- Page 1 --&gt;
+&lt;page intID=&quot;1&quot;&gt;
+&lt;question id=&quot;RS01&quot; intID=&quot;2&quot; /&gt;
+&lt;php intID=&quot;3&quot;&gt;&lt;![CDATA[
+$qnr = value(&#039;RS01&#039;, &#039;label&#039;);
+goToQuestionnaire($qnr);
+]]&gt;&lt;/php&gt;
+&lt;/page&gt;
+
+
+&lt;/questionnaire&gt;</attr>
+<attr id="goodbye">
+<![CDATA[=== Thank you for completing this questionnaire! ===
+
+We would like to thank you very much for helping us.
+
+Your answers were submitted, you may close the browser window or tab now.]]>
+</attr>
+<attr id="selection">1</attr>
+</attributes.specific>
+</questionnaire>
+<setting name="DataFilter" key="df" encoding="json">
+{"dfStatus":2,"progress":"finished"}</setting>
+</surveyProject>
