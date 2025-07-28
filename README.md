@@ -41,7 +41,7 @@ If you want your chatbot to be monitored for enhanced response times, you can us
 3. Choose a monitor interval and click on Create monitor.
 
 ### Webpage
-Upload the [chatbot-webpage](chatbot-webpage) file in two separate public repositories (for each chatbot one, if you want to test both chatbots). Make sure to replace the agent-id in the [index.html](chatbot-webpage/index-html) file with your own agent-id (in Dialogflow: Integrations -> Dialogflow Messenger -> Click "Enable" -> Copy the `<script>...</script>` line and paste into index.html)
+Upload the [chatbot-webpage](chatbot-webpage) file in two separate public repositories (for each chatbot one, if you want to test both chatbots). Make sure to replace the `agent-id` in the [index.html](chatbot-webpage/index.html) file with your own `agent-id` (in Dialogflow: Integrations -> Dialogflow Messenger -> Click "Enable" -> Copy the `<script>...</script>` line and paste into index.html)
 
 To test your chatbot on the webpage, go to your webpage repository, click on Settings -> Pages -> Visit site (Or the click on the link "Your site is live at ...")
 
