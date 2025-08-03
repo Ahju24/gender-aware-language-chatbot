@@ -14,7 +14,6 @@ def webhook():
     parameters = req.get("queryResult", {}).get("parameters", {})
 
     if intent == "Welcome_Gendered - gender":
-        #gender = parameters.get("Gender", "").lower()
         raw_gender = parameters.get("Gender", "")
         gender = raw_gender[0].lower() if isinstance(raw_gender, list) else raw_gender.lower()
 
@@ -194,7 +193,7 @@ def webhook():
 
         
         # Compose return link (assuming you store pid in session or from query param)
-        pid = request.args.get('pid', 'missingPID')  # or fetch it another way
+        pid = request.args.get('pid', 'missingPID') 
         survey_link = f"https://www.soscisurvey.de/seminar19/?r=return&pid={pid}"
 
         # Compose summary + recommendation
@@ -204,9 +203,6 @@ def webhook():
             f"I hope it matches your style!\n\n"
             f"To complete your experience, please click the button on the top to return to the survey.\n"
         )
-
-        #Shorter answer
-        #f"{title}, I recommend {outfit} for your {temperature} {season} {event}.\n\n"
 
         # Return both text and payload
         return jsonify({
@@ -227,7 +223,7 @@ def webhook():
 
     elif intent == "ClosingIntent":
         # Compose return link (assuming you store pid in session or from query param)
-        pid = request.args.get('pid', 'missingPID')  # or fetch it another way
+        pid = request.args.get('pid', 'missingPID') 
         survey_link = f"https://www.soscisurvey.de/seminar19/?r=return&pid={pid}"
 
         response_text = (
@@ -254,6 +250,3 @@ def webhook():
     # Default fallback
     return jsonify({"fulfillmentText": "I'm not sure how to help with that."})
 
-
-#if __name__ == '__main__':
-#   app.run(port=5000)
